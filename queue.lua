@@ -1,5 +1,5 @@
 
---circular buffer
+--circular buffer of Lua values
 --Written by Cosmin Apreutesei. Public domain.
 
 local function new(size)
