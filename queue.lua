@@ -88,7 +88,10 @@ local function new(size, INDEX)
 	end
 
 	function q:remove(v)
-		self:remove_at(self:find(v))
+		local i = self:find(v)
+		if not i then return false end
+		self:remove_at(i)
+		return true
 	end
 
 	if INDEX ~= nil then
