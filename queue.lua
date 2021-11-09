@@ -2,6 +2,7 @@
 --Circular buffer (aka fixed-sized fifo queue) of Lua values.
 --Written by Cosmin Apreutesei. Public domain.
 
+--This implementation allows removing a value at any position from the queue.
 --For a cdata ringbuffer, look for fs.mirror_map() and lfrb.
 
 local function new(size, INDEX)
